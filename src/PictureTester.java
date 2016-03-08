@@ -30,6 +30,13 @@ public class PictureTester
     beach.negate();
     beach.explore();
   }
+
+  public static void testGrayscale() {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
@@ -95,6 +102,7 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
     // testKeepOnlyBlue();
-    testNegate();
+    // testNegate();
+    testGrayscale();
   }
 }
