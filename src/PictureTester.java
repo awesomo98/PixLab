@@ -122,7 +122,7 @@ public class PictureTester
     // testGrayscale();
     //testFixUnderwater();
     // testMirrorVertical();
-    //testMirrorTemple();
+    testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
@@ -143,7 +143,7 @@ public class PictureTester
     // testMirrorVerticalRightToLeft();
     // testMirrorHorizontal();
     // testMirrorHorizontalBotToTop();
-    testMirrorDiagonal();
+    // testMirrorDiagonal();
 
   }
 }
