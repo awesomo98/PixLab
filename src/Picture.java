@@ -200,6 +200,22 @@ public class Picture extends SimplePicture {
 		}
 	}
 
+	public void mirrorDiagonal() {
+		Pixel[][] pixels = this.getPixels2D();
+		Pixel botLeftPixel = null;
+		Pixel topRightPixel = null;
+		int height = pixels.length;
+		int width = pixels.length;
+		int takeItToTheLimit = Math.min(height, width);
+		for (int row = 0; row < takeItToTheLimit; row++) {
+			for (int col = 0; col <takeItToTheLimit; col++) {
+				botLeftPixel = pixels[row][col];
+				topRightPixel = pixels[col][row];
+				botLeftPixel.setColor(topRightPixel.getColor());
+			}
+		}
+	}
+
 	/** Mirror just part of a picture of a temple */
 	public void mirrorTemple() {
 		int mirrorPoint = 276;
