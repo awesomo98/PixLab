@@ -60,6 +60,13 @@ public class PictureTester
     caterpillar.mirrorVerticalRightToLeft();
     caterpillar.explore();
   }
+
+  public static void testMirrorHorizontal() {
+    Picture motorcycle = new Picture("redMotorcycle.jpg");
+    motorcycle.explore();
+    motorcycle.mirrorHorizontal();
+    motorcycle.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -119,6 +126,7 @@ public class PictureTester
     // testNegate();
     // testGrayscale();
     // testFixUnderwater();
-    testMirrorVerticalRightToLeft();
+    // testMirrorVerticalRightToLeft();
+    testMirrorHorizontal();
   }
 }
