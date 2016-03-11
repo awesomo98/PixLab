@@ -145,7 +145,7 @@ public class PictureTester
     // testMirrorVertical();
     // testMirrorTemple();
     // testMirrorArms();
-    testMirrorGull();
+    // testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
@@ -165,6 +165,7 @@ public class PictureTester
     // testMirrorHorizontal();
     // testMirrorHorizontalBotToTop();
     // testMirrorDiagonal();
+    testCopy2();
 
   }
 }
