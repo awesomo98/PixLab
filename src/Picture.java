@@ -339,6 +339,12 @@ public class Picture extends SimplePicture {
 	 * @param edgeDist
 	 *            the distance for finding edges
 	 */
+
+	public void myCollage() {
+		
+	}
+
+	
 	public void edgeDetection(int edgeDist) {
 		Pixel leftPixel = null;
 		Pixel rightPixel = null;
