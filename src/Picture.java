@@ -239,15 +239,37 @@ public class Picture extends SimplePicture {
 	}
 
 	public void mirrorArms() {
+		Pixel[][] pixels = this.getPixels2D();
 		int mirrorPoint = 200;
 		Pixel topPixel = null;
 		Pixel bottomPixel = null;
 		int height = pixels.length;
-		for (int row = 0; row < height / 2; row++) {
-			for (int col = 0; col < pixels[0].length; col++) {
+		for (int row = 170; row < 197; row++) {
+			for (int col = 235; col < 294; col++) {
 				topPixel = pixels[row][col];
 				bottomPixel = pixels[height - 1 - row][col];
 				bottomPixel.setColor(topPixel.getColor());
+			}
+		}
+		for (int row = 157; row < 181; row++) {
+			for (int col = 102; col < 172; col++) {
+				topPixel = pixels[row][col];
+				bottomPixel = pixels[height - 1 - row][col];
+				bottomPixel.setColor(topPixel.getColor());
+			}
+		}
+	}
+
+	public void mirrorGull() {
+		int mirrorPoint = 344;
+		Pixel leftPixel = null;
+		Pixel rightPixel = null;
+		Pixel[][] pixels = this.getPixels2D();
+		for (int row = 232; row < 319; row++) {
+			for (int col = 236; col < mirrorPoint; col++) {
+				leftPixel = pixels[row][col];
+				rightPixel = pixels[row][mirrorPoint - col + mirrorPoint];
+				rightPixel.setColor(leftPixel.getColor());
 			}
 		}
 	}
