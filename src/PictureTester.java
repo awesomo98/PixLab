@@ -121,6 +121,20 @@ public class PictureTester
     swan.explore();
   }
 
+   public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
+  
+  public static void testEdgeDetection3()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection3(10);
+    swan.explore();
+  }
+
   public static void testCopy2() {
     Picture seagull = new Picture("seagull.jpg");
     Picture beach = new Picture("beach.jpg");
@@ -157,6 +171,7 @@ public class PictureTester
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
+    testEdgeDetection3();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
@@ -172,7 +187,7 @@ public class PictureTester
     // testMirrorHorizontalBotToTop();
     // testMirrorDiagonal();
     // testCopy2();
-    testMyCollage();
+    // testMyCollage();
 
   }
 }
