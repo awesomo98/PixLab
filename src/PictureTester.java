@@ -122,10 +122,16 @@ public class PictureTester
   }
 
   public static void testCopy2() {
-    Picture flower1 = new Picture("flower1.jpg");
-    flower1.explore();
-    flower1.copy2();
-    flower1.explore();
+    Picture seagull = new Picture("seagull.jpg");
+    Picture beach = new Picture("beach.jpg");
+    beach.copy2(seagull, 233, 233, 323, 348);
+    beach.explore();
+  }
+
+  public static void testMyCollage() {
+    Picture beach = new Picture("beach.jpg");
+    beach.myCollage();
+    beach.explore();
   }
   
   /** Main method for testing.  Every class can have a main
@@ -165,7 +171,8 @@ public class PictureTester
     // testMirrorHorizontal();
     // testMirrorHorizontalBotToTop();
     // testMirrorDiagonal();
-    testCopy2();
+    // testCopy2();
+    testMyCollage();
 
   }
 }
